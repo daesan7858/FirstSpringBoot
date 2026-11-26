@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 24px;
+    background: #f7f3e8;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.score-badge {
+    padding: 12px 18px;
+    background: #fff2bf;
+    border: 2px solid #d49b24;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.treasure-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.treasure {
+    width: 240px;
+    height: 160px;
+    background-color: #f6c445;
+    border: 6px solid #8b4513;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 160px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.quiz-grid {
+    display: grid;
+}
+
+.treasure-card {
+    min-height: 110px;
+    border: 3px solid brown;
+    border-radius: 16px;
+    background: #f6c445;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
