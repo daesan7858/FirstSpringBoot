@@ -40,19 +40,15 @@
     <main class="quiz-grid">
 
         <button 
-        onclick="say(0)"
         class="treasure-card special"
         data-index="0">🎁보물 1</button>
         <button 
-        onclick="say(1)" 
-        class="treasure-card1"
+        class="treasure-card"
         data-index="1">🎁보물 2</button>
         <button 
-        onclick="say(2)"
-        class="treasure-card2"
+        class="treasure-car"
         data-index="2">🎁보물 3</button>
         <button 
-        onclick="notify(3)"
         class="treasure-card"
         data-index="3">🎁보물 4</button>
         <button 
@@ -72,8 +68,13 @@
         data-index="8">🎁보물 9</button>
     </main>
     <script>
-        let treasureCard_special_find = document.querySelector(".treasure-card.special");
-        treasureCard_special_find.textContent = "Eureka! 스페셜 보물상자를 찾았어!"
+        let treasureCards = document.querySelector(".treasure-card");
+        
+        let treasureCard_special_find = document.querySelector(".treasure-card.special")
+        treasureCards.forEach(
+            treasureCard_special_find.textContent = "Eureka! 스페셜 보물상자를 찾았어!",
+            treasureCard_special_find.addEventListener("click", say(0))
+        );
     </script>
 
     <!-- 보물상자를 누르면 질문이 나오는 패널 추가-->

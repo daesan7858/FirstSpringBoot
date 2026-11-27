@@ -25,14 +25,22 @@ cards.forEach(function(card){  // 각각의 카드를 찾는 루프가 내장
     // let alertFun = function() {alert("안녕")}
     // alertFun(); // alertFun() 함수로 실행시킴
     
-        card.addEventListener("click", function() {
+    card.addEventListener("click", function() {
         // 2. 정의된 함수를 클릭이벤트와 연결 등록
         // card는 보물상자 버튼 하나
-            card.classList.add("open")
-            questionText.textContent = "문제가 출제됨. 정답을 맞혀보시오."
-        });
-        // 3. 이벤트 처리 함수를 구현
-        
-    }
+        card.classList.add("open")
+        questionText.textContent = "문제가 출제됨. 정답을 맞혀보시오."
+    });
+    // 3. 이벤트 처리 함수를 구현
     
+}
+
 ); 
+
+let treasureCards = document.querySelector(".treasure-card");
+let treasureCard_special_find = document.querySelector(".treasure-card.special")
+treasureCards.forEach(
+    treasureCard_special_find.addEventListener
+        ("click", function(){
+            treasureCard_special_find.textContent = "Eureka! 스페셜 보물상자를 찾았어!"}
+))

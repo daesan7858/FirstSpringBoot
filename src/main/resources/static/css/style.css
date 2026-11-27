@@ -74,23 +74,3 @@ body {
     border-color: #d49b24;
     transform: scale(1.02);   /* 크기가 약간 커지게 */
 }
-
-.treasure-card1 {
-    min-height: 110px;
-    border: 5px solid brown;
-    border-radius: 16px;
-    background: #f6c445;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.treasure-card2 {
-    min-height: 110px;
-    border: 10px solid brown;
-    border-radius: 16px;
-    background: #f6c445;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
