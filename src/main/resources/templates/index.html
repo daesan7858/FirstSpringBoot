@@ -16,16 +16,35 @@
         <div class="treasure">🎁황금</div>
         <div class="treasure">🌎보물지도</div>
     </div>
+        
+        <script>    
+            // 테스트 
+            notify(5);
+            function notify(index) {
+                // 동적 문자열 만들기
+                // 1. 동적 문자열을 무조건 '...' 구성
+                // 2. 'ㅎㅇ! {변수명}' => "ㅎㅇ! 변수내용이 출력"
+                // 3. {가변데이터} => 정적데이터로 생성 => "변환된 정적문자열"
+                // 4. 가변문자열은 '${변수명} 입니다.' 형식 
+                let msg = '${i} 번째 버튼이 눌려짐';
+                alert(msg)
+            }
+
+        </script>
 
     <main class="quiz-grid">
+
         <button 
-            class="treasure-card"
+            onclick="function() {alert('스페셜 버튼 클릭')}"
+            class="treasure-card special"
             data-index="0">🎁보물 1</button>
         <button 
-            class="treasure-card"
+            onclick="function() {alert('1번 보물상자 오픈!')}" 
+            class="treasure-card1"
             data-index="1">🎁보물 2</button>
         <button 
-            class="treasure-card"
+            onclick="function() {alert('2번 보물상자 오픈!')}"
+            class="treasure-card2"
             data-index="2">🎁보물 3</button>
         <button 
             class="treasure-card"
@@ -46,8 +65,22 @@
             class="treasure-card"
             data-index="8">🎁보물 9</button>
     </main>
-  
 
+    <!-- 보물상자를 누르면 질문이 나오는 패널 추가-->
+    <section class="question-panel">
+        <h2>보물상자별<strong>🧩오늘의 퀴즈</strong></h2>
+        <p id="question-text">보물상자를 선택해 문제를 푸시오!!</p>
+    </section>
 
+        <script>
+            function notify(index) {
+                alert('{index}번째 번호가 눌렸어요.');
+            }
+
+            // notify() 테스트
+            notify(5);
+        </script>
+    
+    <script src="/js/game.js" />
 </body>
 </html>
